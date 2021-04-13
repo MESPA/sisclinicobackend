@@ -1,0 +1,251 @@
+publicar proyecto ubicacion especifica
+dotnet publish -c Release -o C:\MyWebs\test
+
+ejecuta el proyecto
+dotnet run
+
+
+
+<app-navbar></app-navbar>
+
+<div class="row align-items-center mt-5" >
+       
+   
+        
+    <div class="col">
+   <h3 class="align-content-center"><small><strong>Registro de Pacientes</strong></small> </h3> 
+    <br>    
+    <img id="circulo" src="/assets/img/OIP.jfif"   alt="" 
+    (click)="circulo()" type="button"  
+    data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"
+    >
+    </div>
+    <div class="col">
+     <h3 class="align-content-center"><small><strong>Citas de Pacientes</strong></small> </h3> 
+     <br> 
+        <img id="circulo"  src="/assets/img/reporte.png" alt=""
+        (click)="circulo1()" type="button"  
+    data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo"
+        >
+    </div>
+    <div class="col">
+     <h3 class="align-content-center"><small><strong>Expediente de Pacientes</strong></small> </h3> 
+     <br> 
+        <img id="circulo" src="/assets/img/icono.ico" alt=""
+        (click)="circulo2()" type="button"  
+        data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"
+           
+        >
+   
+      </div>
+     
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Registrar Paciente</strong> </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          
+          <div class="row">
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">Nombres</label>
+                <input type="text" class="form-control" id="recipient-name">
+
+              </div>
+
+              <div class="col-6">
+                <label for="recipient-name" class="col-form-label">Primer Apelido</label>
+                <input type="text" class="form-control" id="recipient-name">
+                
+              </div>
+
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Segundo Apellido</label>
+              <input type="text" class="form-control" id="recipient-name">
+
+            </div>
+
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Cedula</label>
+              <input type="text" class="form-control" id="recipient-name">
+              
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Telefono</label>
+              <input type="text" class="form-control" id="recipient-name">
+
+            </div>
+
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Celular</label>
+              <input type="text" class="form-control" id="recipient-name">
+              
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Fecha de Nacimiento</label>
+              <input type="text" class="form-control" id="recipient-name">
+
+            </div>
+
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Sexo</label>
+              <input type="text" class="form-control" id="recipient-name">
+              
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Direccion</label>
+              <input type="text" class="form-control" id="recipient-name">
+
+            </div>
+
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Email</label>
+              <input type="text" class="form-control" id="recipient-name">
+              
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Grupo Sangineo</label>
+              <input type="text" class="form-control" id="recipient-name">
+
+            </div>
+
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Estado Civil</label>
+              <input type="text" class="form-control" id="recipient-name">
+              
+            </div>
+
+        </div>
+        <h5><strong>Seguros Medicos</strong> </h5>
+        <div class="row">
+          
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Ars</label>
+              <input type="text" class="form-control" id="recipient-name">
+
+            </div>
+
+            <div class="col-6">
+              <label for="recipient-name" class="col-form-label">Nss</label>
+              <input type="text" class="form-control" id="recipient-name">
+              
+            </div>
+
+        </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer" >
+        <button class="text-align-center" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Datos</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Crear Citas</strong> </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Cedula</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Doctor</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Fecha De Cita</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cita</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><strong></strong> </h5>
+          <form class="form-inline my-2 my-lg-2">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                 </form>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Seccion</th>
+                    
+                  </tr>
+                </thead >
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                     <td><button type="button" class="btn btn-outline-primary">Actualizar</button>
+                       | <button type="button" class="btn btn-outline-danger">Actualizar</button>
+                    </td>   
+                           
+                </tr>
+                  
+                </tbody>
+              </table>
+              
+        </div>
+     </div>
+    </div>
+  </div>
+
+

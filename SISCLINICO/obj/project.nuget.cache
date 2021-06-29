@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8KYoSYhKjx4NUAsyTx623M73WKfOyHqdEEWFRy05/BNdZRp+Kqbj2f4YKCYegRKNZihHIcLsRJCCUF1dmsAebA==",
+  "dgSpecHash": "Xc9J1F3LQIsEsFGpwM1HqfsehdQR9Z+Mjj8SEqBzsUmD0Fp9DZCuJDi20c3VzU1vq4Ep6Ae8f9zgiGcwn63Yeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",

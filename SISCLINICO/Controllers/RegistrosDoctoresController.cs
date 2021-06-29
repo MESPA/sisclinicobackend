@@ -91,7 +91,7 @@ namespace SISCLINICO.Controllers
 
                 context.Update(doctores);
                 await context.SaveChangesAsync();
-                return Ok(new { message = "Comantario actualizado con exito!" });
+                return Ok(new { message = " actualizado con exito!" });
 
             }
             catch (Exception ex)

@@ -1,41 +1,39 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SisClinico.Context;
-using SisClinico.Model;
+using SISCLINICO.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace SISCLINICO.Controllers
-{   
-    [ApiController]
-    [Route("api/[controller]")]
-    
-
-    public class RegistrosPacientesController : ControllerBase
+{
+         [ApiController]
+         [Route("api/[controller]")]
+    public class RegistrarCitasController : ControllerBase
     {
+
         private readonly SisClinicoDbContext context;
 
-        public RegistrosPacientesController(SisClinicoDbContext context) {
+        public RegistrarCitasController(SisClinicoDbContext context) {
 
             this.context = context;
              
     }
-        #region paciente
+        #region Citas
 
-        // GET: RegistrosController
-        [HttpGet]
+          [HttpGet]
    
-        public  ActionResult Get()
+        public  ActionResult GetCitas()
         {
             try
             {
-                var consulta = (context.Paciente.OrderByDescending(x => x.IdPaciente).Take(250).ToList()); 
 
-                return Ok(consulta);
+                return Ok(context.Citas.OrderByDescending(x => x.IdCitas).Take(250).ToList()); 
+
                 
             }
             catch (Exception ex)
@@ -45,38 +43,31 @@ namespace SISCLINICO.Controllers
             }
            
         }
-
-        [HttpGet("{id}", Name ="GetPaciente")]
+     [HttpGet("{id}", Name ="GetCitas")]
     
-        public ActionResult Get(int id)
+        public ActionResult GetCitas(int id)
         {
             try
             {
-
-
-                var registros = context.Paciente.FirstOrDefault(r => r.IdPaciente == id);
+                var registros = context.Citas.FirstOrDefault(r => r.IdCitas == id);
                 return Ok(registros);
-
-
             }
             catch (Exception ex)
             {
-
                 return BadRequest(ex.Message);
             }
 
         }
 
-        // POST
         [HttpPost]
-        public ActionResult Post([FromBody] Paciente paciente)
+        public ActionResult PostCitas([FromBody] Citas citas)
         {
             try
             {
-                
-                context.Paciente.Add(paciente);
+               
+                context.Citas.Add(citas);
                 context.SaveChanges();
-                return CreatedAtRoute("GetPaciente", new { id = paciente.IdPaciente }, paciente);
+                return CreatedAtRoute("GetCitas", new { id = citas.IdCitas }, citas);
             }
             catch (Exception ex)
             {
@@ -87,18 +78,18 @@ namespace SISCLINICO.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] Paciente paciente)
+        public async Task<IActionResult> PutCitas(int id, [FromBody] Citas citas)
         {
             try
             {
-                if (id != paciente.IdPaciente)
+                if (id != citas.IdCitas)
                 {
                     return BadRequest();
                 }
 
-                context.Update(paciente);
+                context.Update(citas);
                 await context.SaveChangesAsync();
-                return Ok(new { message = " actualizado con exito!" });
+                return Ok(new { message = "actualizado con exito!" });
 
             }
             catch (Exception ex)
@@ -108,10 +99,8 @@ namespace SISCLINICO.Controllers
 
         }
 
-      
-       
 
         #endregion
-
+       
     }
 }

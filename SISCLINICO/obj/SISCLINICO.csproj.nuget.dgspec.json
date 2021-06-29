@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj": {}
+    "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj": {
+    "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj",
         "projectName": "SISCLINICO",
-        "projectPath": "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\SISCLINICO\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\SISCLINICO\\SISCLINICO\\SISCLINICO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
